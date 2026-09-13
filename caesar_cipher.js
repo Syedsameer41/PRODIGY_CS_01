@@ -29,5 +29,10 @@ result += oldLetter;
 }
 return result;
 };
-let output =caesarCipher("Zz 123!",1,"encrypt");
+let choice = prompt("Enter encrypt or decrypt:");
+let message = prompt("Enter message:");
+let shift = Number(prompt("Enter shift:"));
+
+let output = caesarCipher(message, shift, choice);
+
 console.log(output);
